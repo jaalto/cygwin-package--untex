@@ -2,4 +2,4 @@ sdesc: "Remove LaTeX commands from input"
 ldesc: "A filter that removes LaTeX commands from input and sends the filtered
 text to output."
 category: Text
-requires: cygwin
+requires: libgcc1

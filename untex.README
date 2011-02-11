@@ -7,13 +7,12 @@ A filter that removes LaTeX commands from input and sends the filtered
 text to output.
 
 Runtime requirements:
-  cygwin
+  libgcc1
 
 Build requirements:
-  cygwin
 
 Canonical homepage:
-  <no upstream page exists>
+  <no upstream homepage exists>
   http://packages.debian.org/untex
 
 Canonical download:
@@ -50,15 +49,18 @@ Build instructions:
 ------------------------------------------
 
 Files included in the binary distribution:
-  See content of *.tar.gz
+  See Cygwin package archive
 
 ------------------------------------------
 
 Port Notes:
 - No manual page. Copied from Debian.
 
+----- version 1.2-1 -----
+- New upstream release 2011-02-11 Jari Aalto
+
 ----- version 9210-1 -----
 - Initial release 2008-03-06 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2008 Jari Aalto; Licensed under GPL v2 or later
+Copyright (C) 2008-2011 Jari Aalto; Licensed under GPL v2 or later

@@ -1,6 +1,6 @@
 To: cygwin-announce@cygwin.com
-Subject: Updated: package N.N
-Subject: New package: package N.N -- decription
+Subject: Updated: untex 1.2-1 -- decription
+--text follows this line--
 
 PACKAGE DESCRIPTION
 ===================
@@ -14,7 +14,7 @@ text to output.
 CHANGES SINCE LAST RELEASE
 ==========================
 
-None.
+Not available. This project does not maintain Change Logs.
 
 INSTALL OR UPGRADE NOTES
 ========================
