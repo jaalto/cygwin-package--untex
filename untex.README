@@ -1,0 +1,64 @@
+untex
+------------------------------------------
+
+Remove LaTeX commands from input
+
+A filter that removes LaTeX commands from input and sends the filtered
+text to output.
+
+Runtime requirements:
+  cygwin
+
+Build requirements:
+  cygwin
+
+Canonical homepage:
+  <no upstream page exists>
+  http://packages.debian.org/untex
+
+Canonical download:
+  See above
+
+Version control repository:
+
+Mailing list:
+
+Forum / Wiki:
+
+IRC channel:
+
+Upstream contact:
+  <unlikely that email is valid>
+  Maintainer: Erick Branderhorst <branderhorst@heel.fgg.eur.nl>
+  Bugs:
+
+License:
+  GPL
+
+Language:
+  C
+
+------------------------------------------
+
+Build instructions:
+  unpack untex-*-src.tar.bz2
+    if you use setup to install this src package, it will be
+    unpacked under /usr/src automatically
+  cd /usr/src
+  ./untex*.sh all
+
+------------------------------------------
+
+Files included in the binary distribution:
+  See content of *.tar.gz
+
+------------------------------------------
+
+Port Notes:
+- No manual page. Copied from Debian.
+
+----- version 9210-1 -----
+- Initial release 2008-03-06 Jari Aalto
+
+Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
+Copyright (C) 2008 Jari Aalto; Licensed under GPL v2 or later

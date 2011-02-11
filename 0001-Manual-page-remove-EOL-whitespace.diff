@@ -1,0 +1,56 @@
+From bd85f9f854fe04b339e68037cc3316d364ad341b Mon Sep 17 00:00:00 2001
+From: Jari Aalto <jari.aalto@cante.net>
+Date: Thu, 6 Mar 2008 15:31:54 +0200
+Subject: [PATCH] Manual page: remove EOL whitespace
+
+Signed-off-by: Jari Aalto <jari.aalto@cante.net>
+---
+ untex.1 |   10 +++++-----
+ 1 files changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/untex.1 b/untex.1
+index 2e04da2..151f7f1 100644
+--- a/untex.1
++++ b/untex.1
+@@ -1,26 +1,26 @@
+ .\" This is an -*- nroff -*- source file.
+ .\" Author: Enrique Zanardi
+ .TH UNTEX 1 "14th March 1997"
+-.SH NAME 
++.SH NAME
+ untex \- Remove LaTeX commands from input
+ .SH SYNOPSIS
+ .B untex
+ [\-o] [\-a] [\-m] [\-e] [\-u[iso,ascii]] [\-g[iso,ascii]] file1 [file2]  ...
+ .SH DESCRIPTION
+-.B untex 
++.B untex
+ removes all LaTeX commands from file1, extracting the contents to
+ stdout. If file1 is "-", stdin will be used.
+ .SH OPTIONS
+ .TP
+ .I "\-a"
+-Remove arguments. Implies 
++Remove arguments. Implies
+ .I \-o
+ .TP
+ .I "\-e"
+ Remove environment names.
+ .TP
+ .I "\-g"
+-Replace all "a (etc.) with ibm characters (german.sty). Implies 
++Replace all "a (etc.) with ibm characters (german.sty). Implies
+ .I \-u
+ .TP
+ .I "\-m"
+@@ -34,6 +34,6 @@ Replace all \\"a (etc.) with ibm characters
+ .SH SEE ALSO
+ .BR tex (1).
+ .SH AUTHOR
+-.B untex 
++.B untex
+ was written by Michael Staats. This manpage was written by Enrique
+ Zanardi.
+-- 
+1.5.3.8
+
