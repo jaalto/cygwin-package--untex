@@ -1,0 +1,56 @@
+From 379ecdad9d5b02378cfab5f85feaea494d8223c6 Mon Sep 17 00:00:00 2001
+From: Jari Aalto <jari.aalto@cante.net>
+Date: Fri, 11 Feb 2011 21:27:08 +0200
+Subject: [PATCH] Makefile: rewrite install
+Organization: Private
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+Signed-off-by: Jari Aalto <jari.aalto@cante.net>
+---
+ Makefile |   23 ++++++++++++++++-------
+ 1 files changed, 16 insertions(+), 7 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index 92857ad..1e53446 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,19 +1,28 @@
+ 
+-BINDIR=/usr/local/bin
++DESTDIR		=
++prefix		= /usr
++exec_prefix	= $(prefix)
++man_prefix	= $(prefix)/share
++mandir		= $(man_prefix)/man
++bindir		= $(exec_prefix)/bin
++sharedir	= $(prefix)/share
++
++BINDIR		= $(DESTDIR)$(bindir)
+ MANEXT=1
+-MANDIR=/usr/local/man/man$(MANEXT)
++MANDIR		= $(DESTDIR)$(mandir)/man$(MANEXT)
++
+ CFLAGS=-O
+ 
+ untex: untex.c
+ 	$(CC) $(CFLAGS) -o untex untex.c
+ 
+-install: untex
+-	cp untex $(BINDIR)
+-	chmod 755 $(BINDIR)/untex
++install: untex install.man
++	install -D -m 755 untex $(BINDIR)/untex
++	# chmod 755 $(BINDIR)/untex
+ 
+ install.man: untex.man
+-	cp untex.man $(MANDIR)/untex.$(MANEXT) 
+-	chmod 644 $(MANDIR)/untex.$(MANEXT) 
++	install -D -m 644 untex.man $(MANDIR)/untex.$(MANEXT)
++	# chmod 644 $(MANDIR)/untex.$(MANEXT)
+ 
+ tarfile: untex.c untex.man Makefile
+ 	tar cvf untex-1.2.tar untex.c untex.man Makefile
+-- 
+1.7.4
+
